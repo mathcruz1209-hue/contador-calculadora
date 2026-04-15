@@ -1,0 +1,94 @@
+body {
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.container {
+  text-align: center;
+}
+
+.calculator {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  padding: 10px;
+  font-size: 24px;
+  background: #cfd3a5;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background: #2c2c2c;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3a3a3a;
+}
+
+.clear {
+  background: #e74c3c;
+}
+
+.equal {
+  background: #3498db;
+  grid-row: span 2;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+/* BOTÃO DE VOGAIS */
+.vowel-btn {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: #2ecc71;
+  font-size: 16px;
+}
+#word, #result {
+  width: 100%;
+  height: 70px;       /* aumenta a altura */
+  font-size: 20px;    /* aumenta o texto */
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+}
+#word, #result {
+  width: 90%;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  background: #cfd3a5; /* mesma cor do display */
+  color: black;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador de Vogais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="calculator">
+    <input type="text" id="word" placeholder="Digite uma palavra">
+
+    <div class="buttons">
+      <button onclick="countVowels()" class="equal">Contar</button>
+      <button onclick="goBack()" class="clear">Voltar</button>
+    </div>
+
+    <input type="text" id="result" disabled placeholder="Resultado">
+  </div>
+
+</div>
+
+<script>
+function countVowels() {
+  let word = document.getElementById("word").value;
+  let vowels = "aeiouAEIOU";
+  let count = 0;
+
+  for (let letter of word) {
+    if (vowels.includes(letter)) {
+      count++;
+    }
+  }
+
+  document.getElementById("result").value =
+    "Tem " + count + " vogais";
+}
+
+function goBack() {
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
